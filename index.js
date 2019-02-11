@@ -1,15 +1,17 @@
-const Discord = require(’discord.js’);
-const token = "NTQ0NTIwOTc0NzIxMzUxNjgx.D0MZXg.gRHOKd4mtHB4tyJMCWzWVWbREGk";
-
+const Discord = require('discord.js');
 const client = new Discord.Client();
 
-
 client.on('ready', () => {
-  console.log('Bot is now connected');
+    console.log('I am ready!');
 });
 
-client.login(process.env.token);
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
+});
 
-
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.NTQ0NTIwOTc0NzIxMzUxNjgx.D0MoBw._EMilotZy3JX5C17LFNczyGJbrc);
 
 
