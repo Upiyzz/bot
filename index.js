@@ -8,7 +8,7 @@ client.on('ready', () => {
   console.log('Bot is now connected');
 });
 
-client.login(token);
+client.login(process.env.token);
 
 
 
